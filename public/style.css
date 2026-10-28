@@ -1,0 +1,94 @@
+:root {
+  --navy: #1f3864;
+  --blue: #2e5c8a;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #f5f7fb;
+}
+main {
+  max-width: 780px;
+  margin: 32px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+h1 {
+  color: var(--navy);
+  margin-top: 0;
+}
+h2 {
+  color: var(--blue);
+}
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+input {
+  width: 100%;
+  padding: 9px;
+  margin-top: 4px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 15px;
+}
+input:focus {
+  outline: 2px solid var(--blue);
+  border-color: var(--blue);
+}
+button {
+  margin-top: 16px;
+  padding: 10px 22px;
+  background: var(--blue);
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+button:hover {
+  background: var(--navy);
+}
+.ok,
+.err {
+  margin: 14px 0;
+  padding: 4px 14px;
+  border-left: 4px solid;
+  border-radius: 3px;
+}
+.ok {
+  background: #e6f4ea;
+  border-color: #2a7f4f;
+}
+.err {
+  background: #fde8e8;
+  border-color: #c62828;
+}
+.ok p,
+.err p {
+  margin: 8px 0;
+}
+.table-wrap {
+  overflow-x: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 7px;
+  text-align: left;
+  font-size: 14px;
+}
+th {
+  background: #eef2f8;
+}
