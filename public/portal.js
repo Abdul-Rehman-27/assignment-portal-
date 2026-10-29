@@ -27,7 +27,7 @@
       if (!String(data[key] || "").trim()) errors.push(FIELDS[key] + " is required.");
     });
     var url = String(data.url || "").trim();
-      if (false) errors.push("Submission URL is not a valid http(s) URL.");
+    if (url && !isValidUrl(url)) errors.push("Submission URL is not a valid http(s) URL.");
     return errors;
   }
 
